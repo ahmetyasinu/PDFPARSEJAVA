@@ -1,8 +1,6 @@
-package ByAu.Crud;
-
+package ByAu.Crud.pdf;
 
 import ByAu.Crud.CrudDemoApplication;
-import ByAu.Crud.pdf.PDFManager;
 import org.apache.pdfbox.io.RandomAccessFile;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -11,7 +9,6 @@ import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.pdf.PDFParser;
 import org.apache.tika.sax.BodyContentHandler;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.xml.sax.SAXException;
 
 import java.io.File;
@@ -20,9 +17,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SpringBootApplication
-public class CrudDemoApplication {
-
+public class PDFParseExample {
     public static void main(String[] args) throws IOException, TikaException, SAXException {
         ///////////////
         // ONLY USE CrudDemoApplication's ONE OPTION
